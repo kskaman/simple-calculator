@@ -81,12 +81,15 @@ npm run dev
 ## Screenshots
 
 1. Theme 1 - Mobile preview :
+
    <img src="./images/theme-1.jpg" alt="Theme 1 Mobile View" width="150" height="225">
 
 2. Theme 2 - Desktop preview :
+
    <img src="./images/theme-2.jpg" alt="Theme 2 Desktop View" width="300" height="200">
 
 3. Theme 3 - Mobile preview :
+
    <img src="./images/theme-3.jpg" alt="Theme 3 Mobile View" width="150" height="225">
 
 ## Contributions
