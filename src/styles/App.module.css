@@ -1,0 +1,5 @@
+.calculatorContainer {
+  width: 540px;
+  height: 706px;
+  color: var(--calculator-background);
+}

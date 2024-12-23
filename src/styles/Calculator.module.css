@@ -1,0 +1,27 @@
+.calculatorDiv {
+  width: 100%;
+  height: 89.5184%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.screen {
+  width: 100%;
+  height: 20.253%;
+}
+
+.screen input {
+  background-color: var(--screen-background);
+  color: var(--scree-text-color);
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  padding: 0 5.0632%;
+  border: none;
+  font-weight: bold;
+  font-size: 3.5rem;
+  pointer-events: none;
+  border-radius: 10px;
+}

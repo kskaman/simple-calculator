@@ -1,0 +1,104 @@
+:root[data-theme="theme_1"] {
+  --main-screen-color: #3a4663;
+
+  --calculator-background: #3a4663;
+  --header-background: #3a4663;
+  --header-color: #ffffff;
+  --screen-background: #181433;
+  --screen-text-color: #ffffff;
+
+  --pad-background: #242d44;
+
+  --pad-normal-button-background: #eae3dc;
+  --pad-normal-button-text: #434a59;
+  --pad-button-shadow: #b3a497;
+  --pad-button-active: #fffffe;
+  --pad-button-shadow-active: #b3a497;
+
+  --pad-del-reset-background: #647198;
+  --pad-del-reset-text: #ffffff;
+  --pad-del-reset-shadow: #414e73;
+  --pad-del-reset-active: #a2b2e1;
+  --pad-del-reset-shadow-active: #414e73;
+
+  --pad-result-button-background: #d03f2f;
+  --pad-result-button-text: #ffffff;
+  --pad-result-shadow: #93261a;
+  --pad-result-active: #f96b5b;
+  --pad-result-shadow-active: #93261a;
+
+  --toggle-background: #242d44;
+  --theme-text-color: #ffffff;
+  --toggle-color: #d03f2f;
+  --toggle-color-active: #f96b5b;
+}
+
+:root[data-theme="theme_2"] {
+  --main-screen-color: #e6e6e6;
+
+  --calculator-background: #e6e6e6;
+  --header-background: #e6e6e6;
+  --header-color: #36362c;
+  --screen-background: #eeeeee;
+  --screen-text-color: #36362c;
+
+  --pad-background: #d2cdcd;
+
+  --pad-normal-button-background: #e5e4e1;
+  --pad-normal-button-text: #36362c;
+  --pad-button-shadow: #a79e91;
+  --pad-button-active: #ffffff;
+  --pad-button-shadow-active: #a79e91;
+
+  --pad-del-reset-background: #378187;
+  --pad-del-reset-text: #ffffff;
+  --pad-del-reset-shadow: #1b6066;
+  --pad-del-reset-active: #62b5bc;
+  --pad-del-reset-shadow-active: #1b6066;
+
+  --pad-result-button-background: #c85402;
+  --pad-result-button-text: #ffffff;
+  --pad-result-shadow: #873901;
+  --pad-result-active: #ff8a38;
+  --pad-result-shadow-active: #873901;
+
+  --toggle-background: #d2cdcd;
+  --theme-text-color: #36362c;
+  --toggle-color: #c85402;
+  --toggle-color-active: #ff8a38;
+}
+
+:root[data-theme="theme_3"] {
+  --main-screen-color: #17062a;
+
+  --calculator-background: #17062a;
+  --header-background: #17062a;
+  --header-color: #ffe53d;
+  --screen-background: #1e0936;
+  --screen-text-color: #ffe53d;
+
+  --pad-background: #1e0936;
+
+  --pad-normal-button-background: #331c4d;
+  --pad-normal-button-text: #ffe53d;
+  --pad-button-shadow: #881c9e;
+  --pad-button-active: #6c34ac;
+  --pad-button-shadow-active: #881c9e;
+
+  --pad-del-reset-background: #56077c;
+  --pad-del-reset-text: #ffffff;
+  --pad-del-reset-shadow: #be15f4;
+  --pad-del-reset-active: #8631af;
+  --pad-del-reset-shadow-active: #be15f4;
+
+  --pad-result-button-background: #00ded0;
+  --pad-result-button-text: #1a2327;
+  --pad-result-shadow: #6cf9f1;
+  --pad-result-active: #93fff8;
+  --pad-result-shadow-active: #6cf9f1;
+
+  --toggle-background: #1e0936;
+  --theme-text-color: #ffe53d;
+  --toggle-color: #00ded0;
+  --toggle-color-active: #93fff8;
+}
