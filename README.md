@@ -4,7 +4,7 @@ A simple Calculator App built to practice and enhance my React and TypeScript sk
 
 ## Acknowledgments
 
-This is a challenge provided by Frontend Mentor. Design assets and inspiration has been taken from the Figma files provided by Frontend Mentor. I give full credit to Frontend Mentor for the design. I am using this project for personal practice and skill improvement. This project will not be used in any commercial distribution.
+This is a challenge provided by [Frontend Mentor](https://www.frontendmentor.io/). Design assets and inspiration has been taken from the Figma files provided by Frontend Mentor. I give full credit to Frontend Mentor for the design. I am using this project for personal practice and skill improvement. This project will not be used in any commercial distribution.
 
 ## Project Overview
 
