@@ -1,6 +1,10 @@
 import padStyles from "../styles/Pad.module.css";
 
-const Pad = () => {
+interface Props {
+  onUserInput: (input: string) => void;
+}
+
+const Pad = ({ onUserInput }: Props) => {
   const padButtonsTags = [
     "7",
     "8",
@@ -28,15 +32,22 @@ const Pad = () => {
           className={
             tag === "DEL" ? padStyles.delResetButton : padStyles.inputButton
           }
+          onClick={() => onUserInput(tag)}
         >
           {tag}
         </button>
       ))}
 
-      <button className={`${padStyles.delResetButton} ${padStyles.spanTwo}`}>
+      <button
+        className={`${padStyles.delResetButton} ${padStyles.spanTwo}`}
+        onClick={() => onUserInput("RESET")}
+      >
         RESET
       </button>
-      <button className={`${padStyles.resultButton} ${padStyles.spanTwo}`}>
+      <button
+        className={`${padStyles.resultButton} ${padStyles.spanTwo}`}
+        onClick={() => onUserInput("=")}
+      >
         =
       </button>
     </div>
