@@ -1,6 +1,4 @@
-// src/components/ThemeButton.tsx
-
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "../context/ThemeContext";
 import themeButtonStyles from "../styles/ThemeButton.module.css";
 import { Theme } from "../types/Theme";
@@ -54,15 +52,12 @@ const ThemeButton: React.FC = () => {
 
     if (clickX < segmentWidth) {
       // left zone => position 1 => LIGHT
-      setPosition(1);
       setTheme(Theme.THEME_1);
     } else if (clickX < 2 * segmentWidth) {
       // middle => position 2 => DARK
-      setPosition(2);
       setTheme(Theme.THEME_2);
     } else {
       // right => position 3 => BLUE
-      setPosition(3);
       setTheme(Theme.THEME_3);
     }
   };
