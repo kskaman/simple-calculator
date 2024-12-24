@@ -13,8 +13,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     // Whenever theme changes, update the global data attribute
     document.documentElement.setAttribute("data-theme", theme);
 
-    // Cleanup function (optional):
-    // if you want to remove or revert the attribute when the component unmounts:
+    // Cleanup function
     return () => {
       document.documentElement.removeAttribute("data-theme");
     };
