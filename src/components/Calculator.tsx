@@ -6,10 +6,21 @@ import Pad from "./Pad";
 const Calculator = () => {
   const [display, setDisplay] = useState<string>("");
 
+  // Format numbers with commas
+  const formatNumber = (number: string) => {
+    // Split the input by non-digit characters to format only the numbers
+
+    return number
+      .replace(/,/g, "")
+      .replace(/(\d+)(?=\.\d+|\b)/g, (match) =>
+        Number(match).toLocaleString("en-US")
+      );
+  };
+
   const getResult = (expression: string) => {
     // Replace "x" with "*" for multiplication and evaluate
-    const expr = expression.replace(/x/g, "*");
-    return eval(expr).toString();
+    const expr = expression.replace(/x/g, "*").replace(/,/g, "");
+    return formatNumber(eval(expr).toString());
   };
 
   const isDigit = (value: string) => /^[0-9]$/.test(value);
@@ -31,10 +42,10 @@ const Calculator = () => {
       if (display.length > 0) {
         if (lastChar === " " && isOperator(secondLastChar)) {
           // Remove operator and its preceding space (e.g., "7 + " => "7")
-          setDisplay(display.slice(0, -3));
+          setDisplay(formatNumber(display.slice(0, -3)));
         } else {
           // Remove the last character
-          setDisplay(display.slice(0, -1));
+          setDisplay(formatNumber(display.slice(0, -1)));
         }
       }
       return;
@@ -43,7 +54,7 @@ const Calculator = () => {
     // 3. Handle digits
     if (isDigit(input)) {
       // Append the digit to the display
-      setDisplay(display + input);
+      setDisplay(formatNumber(display + input));
       return;
     }
 
