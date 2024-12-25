@@ -3,9 +3,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2em;
+  margin-bottom: 32px;
   width: 100%;
-  height: 5.949%;
+  height: 42px;
   padding: 0 3.5px;
   background-color: var(--header-background);
   color: var(--header-color);
@@ -30,4 +30,10 @@
   align-self: flex-end;
   margin-bottom: 10.31px;
   color: var(--theme-text-color);
+}
+
+@media (max-width: 600px) {
+  .headerDiv {
+    padding: 0 3.5px;
+  }
 }
