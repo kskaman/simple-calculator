@@ -50,7 +50,9 @@ const Calculator = () => {
     // 4. Handle operators
     if (isOperator(input)) {
       if (isDigit(lastChar)) {
-        if (["+", "-", "/", "x"].includes(display)) {
+        if (
+          ["+", "-", "/", "x"].some((operator) => display.includes(operator))
+        ) {
           const result = getResult(display);
           setDisplay(result.concat(` ${input} `));
         } else {
