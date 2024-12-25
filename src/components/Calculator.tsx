@@ -82,6 +82,18 @@ const Calculator = () => {
       }
       return;
     }
+
+    // Handle .
+    if (input === ".") {
+      if (isDigit(lastChar)) {
+        const lastNumber = display.split(/[-+x/]/).pop();
+        if (lastNumber && !lastNumber.includes(".")) {
+          setDisplay(display + ".");
+        }
+      } else if (isOperator(secondLastChar) || display === "") {
+        setDisplay(display + "0.");
+      }
+    }
   };
 
   return (
